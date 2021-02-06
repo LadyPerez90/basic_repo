@@ -3,14 +3,18 @@
 <head>
 <style>
 body {background-color: black;}
-h1   {color: limegreen;}
-p    {color: purple;}
+h1   {color: darkmagenta;}
+p1    {color: grey;}
+h2   {color: purple;}
+p2    {color: limegreen;}
+h3   {color: darkred;}
+p3    {color: blue;}
 </style>
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+<h1>Mistresses of Evil and the Dark</h1>
+<p>Ladies of the darkside</p>
 
 </body>
 </html>
