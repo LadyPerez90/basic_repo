@@ -1,0 +1,237 @@
+ls
+
+josef@DarkLady90-MODTOP MINGW64 /
+$ ls
+LICENSE.txt        cmd/  git-bash.exe*  proc/         unins000.exe*
+ReleaseNotes.html  dev/  git-cmd.exe*   tmp/          unins000.msg
+bin/               etc/  mingw64/       unins000.dat  usr/
+
+josef@DarkLady90-MODTOP MINGW64 /
+$ cd ~
+
+josef@DarkLady90-MODTOP MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+'Google Drive'/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{fd9a35da-49fe-11e9-aa2c-248a07783950}.TxR.0.regtrans-ms
+ NTUSER.DAT{fd9a35da-49fe-11e9-aa2c-248a07783950}.TxR.1.regtrans-ms
+ NTUSER.DAT{fd9a35da-49fe-11e9-aa2c-248a07783950}.TxR.2.regtrans-ms
+ NTUSER.DAT{fd9a35da-49fe-11e9-aa2c-248a07783950}.TxR.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Sti_Trace.log
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+josef@DarkLady90-MODTOP MINGW64 ~
+$ cd Documents
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents
+$ ls
+'My Music'@     'My Videos'@   class/         test/
+'My Pictures'@   basic_repo/   destination/   test_commit/
+cd
+josef@DarkLady90-MODTOP MINGW64 ~/Documents
+$ cd basic_repo
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo
+$ ls -a
+./  ../  index.html  style.css
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo
+$ git init
+Initialized empty Git repository in C:/Users/josef/Documents/basic_repo/.git/
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ ls -a
+./  ../  .git/  index.html  style.css
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ git add index.html
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ git add style.css
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ git remote add origin https://github.com/LadyPerez90/basic_repo.git
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (master)
+$ git branch -M main
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/LadyPerez90/basic_repo.git'
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git commit "new changes"
+error: pathspec 'new changes' did not match any file(s) known to git
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git log
+fatal: your current branch 'main' does not have any commits yet
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git commit -m "Maleficent The Mistress of Evil"
+[main (root-commit) 4cfa253] Maleficent The Mistress of Evil
+ 2 files changed, 33 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git add index.html
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ ls
+index.html  style.css
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git log
+commit 4cfa253fcb02944cf716a4af334ae9b6fc7e4924 (HEAD -> main)
+Author: LadyPerez90 <josefa.groce@gmail.com>
+Date:   Sat Feb 6 14:12:54 2021 -0600
+
+    Maleficent The Mistress of Evil
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git remote add origin https://github.com/LadyPerez90/basic_repo.git
+error: remote origin already exists.
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git branch -M main
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 728 bytes | 38.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/LadyPerez90/basic_repo.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git log
+commit 4cfa253fcb02944cf716a4af334ae9b6fc7e4924 (HEAD -> main, origin/main)
+Author: LadyPerez90 <josefa.groce@gmail.com>
+Date:   Sat Feb 6 14:12:54 2021 -0600
+
+    Maleficent The Mistress of Evil
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git add index.html
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git commit -m "Mistresses of Evil and the Dark"
+[main 32b32eb] Mistresses of Evil and the Dark
+ 1 file changed, 19 insertions(+), 5 deletions(-)
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git log
+commit 32b32ebcf5afc1d7e60ba17d94cb05beb710e3a1 (HEAD -> main)
+Author: LadyPerez90 <josefa.groce@gmail.com>
+Date:   Sat Feb 6 14:31:09 2021 -0600
+
+    Mistresses of Evil and the Dark
+
+commit 4cfa253fcb02944cf716a4af334ae9b6fc7e4924 (origin/main)
+Author: LadyPerez90 <josefa.groce@gmail.com>
+Date:   Sat Feb 6 14:12:54 2021 -0600
+
+    Maleficent The Mistress of Evil
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git add style.css
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git commit -m "Mistresses of Evil and the Dark"
+[main 3e995ea] Mistresses of Evil and the Dark
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.44 KiB | 82.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/LadyPerez90/basic_repo.git
+   4cfa253..3e995ea  main -> main
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git add index.html
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git commit -m "Mistresses of Evil and the Dark"
+[main 352218f] Mistresses of Evil and the Dark
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$ git push index.html
+fatal: invalid gitfile format: index.html
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+josef@DarkLady90-MODTOP MINGW64 ~/Documents/basic_repo (main)
+$
